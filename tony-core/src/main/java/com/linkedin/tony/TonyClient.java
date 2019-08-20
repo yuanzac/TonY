@@ -4,8 +4,6 @@
  */
 package com.linkedin.tony;
 
-import azkaban.jobtype.HadoopConfigurationInjector;
-import azkaban.utils.Props;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.ImmutableList;
 import com.google.common.io.Files;
@@ -1071,7 +1069,8 @@ public class TonyClient implements AutoCloseable {
     int exitCode;
 
     // Adds hadoop-inject.xml as a default resource so Azkaban metadata will be present in the new Configuration created
-    HadoopConfigurationInjector.injectResources(new Props() /* ignored */);
+    // Exclude azkaban dependencies.
+    // HadoopConfigurationInjector.injectResources(new Props() /* ignored */);
     try (TonyClient client = new TonyClient(new Configuration())) {
       boolean sanityCheck = client.init(args);
       if (!sanityCheck) {
