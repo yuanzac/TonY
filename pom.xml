@@ -321,28 +321,7 @@
         <inherited>true</inherited>
         <configuration>
           <excludes>
-            <exclude>.git/</exclude>
-            <exclude>.github/*</exclude>
-            <exclude>.gitignore</exclude>
-            <exclude>LICENSE</exclude>
-            <exclude>license_header</exclude>
-            <exclude>**/*.la</exclude>
-            <exclude>**/*.svg</exclude>
-            <exclude>**/*.png</exclude>
-            <exclude>**/*.avsc</exclude>
-            <exclude>**/log4j.properties</exclude>
-            <exclude>**/*.md</exclude>
-            <exclude>**/*.proto</exclude>
-            <exclude>**/*.txt</exclude>
-            <exclude>**/*.xml</exclude>
-            <exclude>**/*.html</exclude>
-            <exclude>**/*.xsd</exclude>
-            <exclude>**/*.json</exclude>
-            <exclude>**/*.conf</exclude>
-            <exclude>**/src/main/java/com/linkedin/tony/events/*</exclude>
-            <exclude>**/src/main/resources/META-INF/services/org.apache.hadoop.security.SecurityInfo</exclude>
-            <exclude>**/src/test/resources/typicalHistFolder/job1/application123-1-1-user1-SUCCEEDED.jhist</exclude>
-            <exclude>**/conf/routes</exclude>
+            <exclude>**</exclude>
           </excludes>
         </configuration>
       </plugin>
