@@ -232,7 +232,7 @@
     <dependency>
       <groupId>org.codehaus.jackson</groupId>
       <artifactId>jackson-xc</artifactId>
-      <version>${jackson-xc.version}</version>
+      <version>${codehaus-jackson.version}</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
