@@ -392,6 +392,7 @@ public class ApplicationMaster {
     RPC.Builder metricsServerBuilder = new RPC.Builder(yarnConf).setProtocol(MetricsRpc.class)
         .setInstance(metricsRpcServer).setPort(metricsRpcPort);
     containerEnv.put(Constants.METRICS_RPC_PORT, Integer.toString(metricsRpcPort));
+    containerEnv.put(Constants.SUBMARINE_JOB_NAME, appIdString);
 
     // Init AMRMClient
     AMRMClientAsync.CallbackHandler allocListener = new RMCallbackHandler();
